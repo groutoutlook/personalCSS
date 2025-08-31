@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@450&display=swap");
+
+pre, code, .blob-code, .blob-code-marker, .react-blob-textarea {
+  font-family:  monospace !important;
+}
+:root {
+	--rgh-heat-color: #FFFF55;
+}
+
+body > div.logged-in.env-production.page-responsive.colorblind-themes-v1 > div.application-main > main > div > div > div > div.flex-shrink-0.col-12.col-md-3 > div > div.my-2 > a,
+#repo-content-pjax-container > div > div > div > div.Layout-sidebar.rgh-sticky-sidebar-container > div > div:nth-child(6) > div > div.mt-2 > a,
+#user-profile-frame > div > div:nth-child(2) > div > h2 , #user-profile-frame > div > div:nth-child(1) > div > h2,
+div.TimelineItem-body > details-toggle > details > summary > span.color-fg-default.ws-normal.text-left,
+[id^="dialog"] > span > span{
+display:none;
+}
+

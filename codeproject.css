@@ -1,0 +1,138 @@
+.blank-background,
+.navmenu,
+.site-header,
+.rating-stars-medium {
+  background: #202020 !important;
+}
+
+body {
+  background: #202020 !important;
+}
+
+.container-content {
+  background: #202020 !important;
+}
+
+.container-article {
+  background: #202020 !important;
+}
+
+.flex-item,
+.container-article p,
+strong,
+em,
+.selected,
+h1,
+h2,
+li,
+.date span,
+.subject-line .author a,
+td,
+.description,
+.author-wrapper .container-member .author,
+.searchbar,
+.date {
+  color: #d8d8d8 !important;
+}
+/* INFO: extra dark */
+.header {
+  color: #d8d8d8 !important;
+}
+
+.text p,
+.abstract {
+  color: #e0e0e0 !important;
+}
+.container-entry,
+.text-sidebar {
+  background-color: #222 !important;
+}
+.article-container {
+  background-color: #222 !important;
+}
+.code-string {
+  color: #ffa000;
+}
+.code-keyword {
+  color: #00ffff;
+}
+.code-digit {
+  color: #20a0ff;
+}
+.code-comment {
+  color: #20a020;
+}
+.Caption {
+  color: #fff;
+}
+.pre-lang {
+  background-color: #f0f090;
+}
+.tags .t a {
+  color: #bbb !important;
+}
+.content-list-item ul li a,
+.homepage .message-list .title a {
+  color: #0090b0;
+}
+.timeline .content-list-item .title a {
+  color: #2090ff;
+}
+table.grid th,
+table.grid td {
+  background-color: #101010;
+}
+table.feature thead td,
+table.feature th td {
+  background-color: #ca1;
+  color: #fff !important;
+}
+/* INFO: End of extra-dark*/
+
+code,
+code strong,
+code em {
+  color: #ff9900 !important;
+}
+
+.desktop-only,
+.navmenu li,
+.navmenu ul,
+.navmenu a,
+.navmenu span,
+.tooltip-flyout,
+pre,
+.search,
+.search td,
+.hover-container,
+.search-advanced,
+#ForumTable table table,
+.indent {
+  background: #282828 !important;
+  color: #d8d8d8 !important;
+}
+
+.navmenu li:hover,
+.navmenu li a:hover,
+.navmenu li a:hover span {
+  background: #ff9900 !important;
+  color: #fefefe !important;
+}
+
+.hover-row.hover,
+.hover-row.hover td,
+.hover-row:hover,
+.hover-row:hover td,
+tr.selected:hover .subject-line td {
+  background-color: #ff9900 !important;
+}
+
+.ArticleTable td,
+.ArticleTableNoBorder td,
+table.article td,
+.ArticleTable th,
+.ArticleTableNoBorder th,
+table.article th {
+  background-color: #282828 !important;
+  color: #d8d8d8 !important;
+}
