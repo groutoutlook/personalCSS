@@ -1,11 +1,3 @@
-/*
-vimium-c Catppuccin Mocha theme with glassmorphism effect
-(c) 2025 Dhanush S M
-*/
-
-/* #ui */
-/* ^ do not touch this line ^ */
-
 * {
   font-family: "JetBrains Mono", monospace !important;
 }
@@ -43,7 +35,7 @@ vimium-c Catppuccin Mocha theme with glassmorphism effect
   height: 1.5rem !important;
   line-height: unset;
   text-transform: lowercase;
-  color: #838686;
+  color: #830000;
   max-width: 420px;
   min-width: unset;
   display: flex;
@@ -394,3 +386,8 @@ body.D {
 .D #i {
   color: #ffffff;
 }
+
+/*#omni*/
+.alt .item::after{background:rgba(255,255,255,0.5);border-radius:21px;color:#550;
+content:attr(data-alt-index);font-size:24px;
+height:30px;line-height:30px;position:absolute;left:calc(50% - 20px);text-align:center;top:2px;width:30px}

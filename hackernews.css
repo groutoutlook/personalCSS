@@ -6,12 +6,14 @@
 @author         Me
 ==/UserStyle== */
 @-moz-document domain("news.ycombinator.com") {
+
 	/* Insert code here... */
 	:root {
 		--c-primary: #0f1226;
 		--c-primary-l1: #1d234c;
 		--c-primary-l2: #9498af;
-		--c-primary-l3: #fd2136;
+		--c-primary-l3: #104006;
+		;
 		--c-secondary: #f7ede2;
 		--c-secondary-d1: #999189;
 		--c-secondary-l1: #e9ceb0;
@@ -19,9 +21,9 @@
 		--m-width: 900px;
 		--b-radius: 8px;
 		--mono-font: ui-monospace, "Jetbrains Mono", "Fira Code", "Cascadia Code",
-		"Menlo", "Monaco", "Cascadia Mono", "Segoe UI Mono", "Roboto Mono",
-		"Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono",
-		"Droid Sans Mono", "Courier New", "Consolas", monospace;
+			"Menlo", "Monaco", "Cascadia Mono", "Segoe UI Mono", "Roboto Mono",
+			"Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono",
+			"Droid Sans Mono", "Courier New", "Consolas", monospace;
 	}
 
 	body {
@@ -83,7 +85,7 @@
 		min-width: 500px !important;
 	}
 
-	#hnmain > tbody > tr:nth-child(1) > td {
+	#hnmain>tbody>tr:nth-child(1)>td {
 		background-color: var(--c-primary) !important;
 		width: var(--m-width) !important;
 	}
@@ -112,7 +114,7 @@
 		color: var(--c-secondary) !important;
 	}
 
-	#hnmain > tbody > tr:nth-child(1) {
+	#hnmain>tbody>tr:nth-child(1) {
 		padding: 12px 0;
 		display: flex;
 		align-items: center;
@@ -120,7 +122,7 @@
 		background-color: var(--c-primary) !important;
 	}
 
-	#hnmain > tbody > tr:nth-child(3) {
+	#hnmain>tbody>tr:nth-child(3) {
 		display: block;
 		margin-top: 10px;
 	}
@@ -176,7 +178,7 @@
 		opacity: 1;
 	}
 
-	.athing:hover + tr .subtext {
+	.athing:hover+tr .subtext {
 		opacity: 1;
 	}
 
@@ -195,7 +197,7 @@
 		font-weight: 800;
 	}
 
-	#hnmain > tbody > tr:nth-child(3) > td > div {
+	#hnmain>tbody>tr:nth-child(3)>td>div {
 		color: var(--c-primary-l2) !important;
 	}
 

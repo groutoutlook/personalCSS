@@ -1,481 +1,491 @@
-.stdrev-select select {
-  background-color: #000;
-  background-image: linear-gradient(#666, #000);
-}
+/* ==UserStyle==
+@name           cppReference
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+@-moz-document domain("cppreference.com/") {
+	/* Insert code here... */
+	.stdrev-select select {
+		background-color: #000;
+		background-image: linear-gradient(#666, #000);
+	}
 
-/* HACK: : Not sure what could happen next.
+	/* HACK: : Not sure what could happen next.
  * */
-#carbonads span {
-  display: none;
-}
+	#carbonads span {
+		display: none;
+	}
 
-.t-lines > span {
-  color: #ffb86c;
-}
-.t-rev-inl,
-.suggestions-special,
-.t-dcl-h > td,
-.t-dsc-hitem > td,
-div#cpp-head-personal ul,
-.t-dcl-rev > .t-dcl-rev-aux > td,
-fieldset {
-  color: #ffb86c;
-}
-code,
-table {
-  color: #f67c94;
-  background-color: transparent;
-}
-.mw-geshi a {
-  color: #afa !important;
-}
-/* ORIG */
-@namespace url(http://www.w3.org/1999/xhtml);
-:root {
-  --fg: #eaeaea;
-  --bg: #1a1a1a;
-  --fg-2: #70c0b1;
-  --bg-2: #2a2a2a;
-  --bg-odd: #424242;
-  --fg-muted: #969896;
-  --fg-input: #f0c674;
-  --bg-input: #4a4a4a;
-  --fg-input-hover: #f0e694;
-  --bg-input-hover: #6a6a6a;
-  --border: solid 0.5px #373b41;
-  --border-color: #373b41;
-  --fg-link: #e78c45;
-  --fg-link-hover: #e7c547;
-  --fg-link-visited: #d54e53;
-  --fg-disabled: #ddd;
-  --bg-disabled: #777;
-  --fg-error: #fff;
-  --fg-warning: #000;
-  --fg-info: #fff;
-  --fg-success: #fff;
-  --bg-error: #600;
-  --bg-warning: #fa4;
-  --bg-info: #14a;
-  --bg-success: #151;
-  --syntax-fg: #eaeaea;
-  --syntax-fg-2: #dadada;
-  --syntax-bg: #000000;
-  --syntax-bg-2: #2a2a2a;
-  --syntax-comment: #969896;
-  --syntax-builtin: #c397d8;
-  --syntax-function: #7aa6da;
-  --syntax-keyword: #ff9da4;
-  --syntax-number: #ffc58f;
-  --syntax-string: #b9ca4a;
-  --syntax-font-family: "Menlo", "Liberation Mono", "Consolas",
-    "DejaVu Sans Mono", "Ubuntu Mono", "Courier New", "andale mono",
-    "lucida console", monospace;
-  --selection-fg: #000;
-}
+	.t-lines > span {
+		color: #ffb86c;
+	}
+	.t-rev-inl,
+	.suggestions-special,
+	.t-dcl-h > td,
+	.t-dsc-hitem > td,
+	div#cpp-head-personal ul,
+	.t-dcl-rev > .t-dcl-rev-aux > td,
+	fieldset {
+		color: #ffb86c;
+	}
+	code,
+	table {
+		color: #f67c94;
+		background-color: transparent;
+	}
+	.mw-geshi a {
+		color: #afa !important;
+	}
+	/* ORIG */
+	@namespace url(http://www.w3.org/1999/xhtml);
+	:root {
+		--fg: #eaeaea;
+		--bg: #1a1a1a;
+		--fg-2: #70c0b1;
+		--bg-2: #2a2a2a;
+		--bg-odd: #424242;
+		--fg-muted: #969896;
+		--fg-input: #f0c674;
+		--bg-input: #4a4a4a;
+		--fg-input-hover: #f0e694;
+		--bg-input-hover: #6a6a6a;
+		--border: solid 0.5px #373b41;
+		--border-color: #373b41;
+		--fg-link: #e78c45;
+		--fg-link-hover: #e7c547;
+		--fg-link-visited: #d54e53;
+		--fg-disabled: #ddd;
+		--bg-disabled: #777;
+		--fg-error: #fff;
+		--fg-warning: #000;
+		--fg-info: #fff;
+		--fg-success: #fff;
+		--bg-error: #600;
+		--bg-warning: #fa4;
+		--bg-info: #14a;
+		--bg-success: #151;
+		--syntax-fg: #eaeaea;
+		--syntax-fg-2: #dadada;
+		--syntax-bg: #000000;
+		--syntax-bg-2: #2a2a2a;
+		--syntax-comment: #969896;
+		--syntax-builtin: #c397d8;
+		--syntax-function: #7aa6da;
+		--syntax-keyword: #ff9da4;
+		--syntax-number: #ffc58f;
+		--syntax-string: #b9ca4a;
+		--syntax-font-family: "Menlo", "Liberation Mono", "Consolas",
+		"DejaVu Sans Mono", "Ubuntu Mono", "Courier New", "andale mono",
+		"lucida console", monospace;
+		--selection-fg: #000;
+	}
 
-/* Selection */
-::-moz-selection {
-  color: var(--bg) !important;
-  background: var(--fg-link) !important;
-  text-shadow: none;
-}
-::selection {
-  color: var(--bg) !important;
-  background: var(--fg-link) !important;
-  text-shadow: none;
-}
-/* Scrollbars */
-::-moz-scrollbar {
-  background-color: var(--bg-2) !important;
-  width: 10px !important;
-}
-::-moz-scrollbar-track {
-  background-color: var(--bg-2) !important;
-}
-::-moz-scrollbar-button {
-  display: none !important;
-}
-::-moz-scrollbar-thumb {
-  background-color: var(--fg-link) !important;
-  border-radius: 4px !important;
-  border: none !important;
-}
-::-moz-scrollbar-thumb:hover {
-  background-color: var(--fg-link-hover) !important;
-}
-::-webkit-scrollbar {
-  background-color: var(--bg-2) !important;
-  width: 10px !important;
-}
-::-webkit-scrollbar-track {
-  background-color: var(--bg-2) !important;
-}
-::-webkit-scrollbar-button {
-  display: none !important;
-}
-::-webkit-scrollbar-thumb {
-  background-color: var(--fg-link) !important;
-  border-radius: 4px !important;
-  border: none !important;
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--fg-link-hover) !important;
-}
+	/* Selection */
+	::-moz-selection {
+		color: var(--bg) !important;
+		background: var(--fg-link) !important;
+		text-shadow: none;
+	}
+	::selection {
+		color: var(--bg) !important;
+		background: var(--fg-link) !important;
+		text-shadow: none;
+	}
+	/* Scrollbars */
+	::-moz-scrollbar {
+		background-color: var(--bg-2) !important;
+		width: 10px !important;
+	}
+	::-moz-scrollbar-track {
+		background-color: var(--bg-2) !important;
+	}
+	::-moz-scrollbar-button {
+		display: none !important;
+	}
+	::-moz-scrollbar-thumb {
+		background-color: var(--fg-link) !important;
+		border-radius: 4px !important;
+		border: none !important;
+	}
+	::-moz-scrollbar-thumb:hover {
+		background-color: var(--fg-link-hover) !important;
+	}
+	::-webkit-scrollbar {
+		background-color: var(--bg-2) !important;
+		width: 10px !important;
+	}
+	::-webkit-scrollbar-track {
+		background-color: var(--bg-2) !important;
+	}
+	::-webkit-scrollbar-button {
+		display: none !important;
+	}
+	::-webkit-scrollbar-thumb {
+		background-color: var(--fg-link) !important;
+		border-radius: 4px !important;
+		border: none !important;
+	}
+	::-webkit-scrollbar-thumb:hover {
+		background-color: var(--fg-link-hover) !important;
+	}
 
-div#cpp-head-second-base,
-div.vectorTabs span,
-div.vectorTabs ul li.selected,
-div.vectorTabs ul,
-div.vectorTabs ul li,
-div.vectorTabs:nth-child(1),
-div#simpleSearch,
-.coliru-btn,
-.coliru-btn:hover,
-.coliru-select-compiler select,
-.ace-tm .ace_indent-guide {
-  background-image: none;
-}
+	div#cpp-head-second-base,
+	div.vectorTabs span,
+	div.vectorTabs ul li.selected,
+	div.vectorTabs ul,
+	div.vectorTabs ul li,
+	div.vectorTabs:nth-child(1),
+	div#simpleSearch,
+	.coliru-btn,
+	.coliru-btn:hover,
+	.coliru-select-compiler select,
+	.ace-tm .ace_indent-guide {
+		background-image: none;
+	}
 
-.t-navbar-sep,
-div#simpleSearch button#searchButton img {
-  filter: invert(1);
-}
+	.t-navbar-sep,
+	div#simpleSearch button#searchButton img {
+		filter: invert(1);
+	}
 
-.mainpagetable tr.row td,
-table.diff {
-  background-color: transparent;
-}
-div#cpp-content-base {
-  background-color: var(--bg);
-}
-html,
-body,
-div#cpp-head-first-base,
-.mainpagetable tr.rowtop td,
-div#cpp-footer-base,
-table.wikitable > * > tr > th,
-table.mw-cppsearch-groups,
-.t-member,
-.t-inherited,
-#pagehistory li.selected,
-td.diff-context {
-  background-color: var(--bg-2);
-}
-div#cpp-head-second-base,
-.t-navbar-menu > div,
-table.fmbox,
-table.fmbox-system,
-table.wikitable,
-.suggestions-special,
-table.ambox,
-div#cpp-head-personal ul,
-td.diff-addedline .diffchange,
-td.diff-deletedline .diffchange {
-  background-color: var(--bg-odd);
-}
+	.mainpagetable tr.row td,
+	table.diff {
+		background-color: transparent;
+	}
+	div#cpp-content-base {
+		background-color: var(--bg);
+	}
+	html,
+	body,
+	div#cpp-head-first-base,
+	.mainpagetable tr.rowtop td,
+	div#cpp-footer-base,
+	table.wikitable > * > tr > th,
+	table.mw-cppsearch-groups,
+	.t-member,
+	.t-inherited,
+	#pagehistory li.selected,
+	td.diff-context {
+		background-color: var(--bg-2);
+	}
+	div#cpp-head-second-base,
+	.t-navbar-menu > div,
+	table.fmbox,
+	table.fmbox-system,
+	table.wikitable,
+	.suggestions-special,
+	table.ambox,
+	div#cpp-head-personal ul,
+	td.diff-addedline .diffchange,
+	td.diff-deletedline .diffchange {
+		background-color: var(--bg-odd);
+	}
 
-div#cpp-head-first-base,
-.mainpagetable tr.rowtop td,
-div#cpp-footer-base,
-table.fmbox,
-table.fmbox-system,
-table.wikitable > * > tr > th,
-table.wikitable,
-div.mw-geshi,
-table.mw-cppsearch-groups,
-.t-member,
-.t-inherited {
-  border-color: transparent;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-.mainpagetable tr.row td,
-.mainpagetable tr.row td:last-child,
-.mainpagetable tr.row td:first-child,
-.t-navbar-menu > div,
-.t-navbar-head,
-table.wikitable > * > tr > td,
-.t-c,
-.t-dsc > td,
-.t-sdsc-begin td,
-.t-rev > td:nth-child(1),
-.t-rev > td:nth-child(2),
-.mw-cppsearch-groups th,
-.mw-cppsearch-groups td,
-table.ambox,
-.t-dcl > td,
-.t-dcl-sep > td,
-.dsctable > tbody > tr:last-child > td,
-.t-inheritance-diagram,
-#userloginForm,
-.t-dcl-rev > .t-dcl:first-child > td,
-.t-dcl-rev > .t-dcl > td,
-.t-cc,
-#pagehistory li,
-td.diff-context {
-  border-color: rgba(255, 255, 255, 0.1);
-}
-.t-rev-inl,
-.suggestions-special,
-.t-dcl-h > td,
-.t-dsc-hitem > td,
-div#cpp-head-personal ul,
-.t-dcl-rev > .t-dcl-rev-aux > td,
-fieldset {
-  border-color: rgba(255, 255, 255, 0.2);
-}
-#pagehistory li.selected {
-  border-color: var(--fg-link);
-}
-hr {
-  background-color: rgba(255, 255, 255, 0.1);
-}
+	div#cpp-head-first-base,
+	.mainpagetable tr.rowtop td,
+	div#cpp-footer-base,
+	table.fmbox,
+	table.fmbox-system,
+	table.wikitable > * > tr > th,
+	table.wikitable,
+	div.mw-geshi,
+	table.mw-cppsearch-groups,
+	.t-member,
+	.t-inherited {
+		border-color: transparent;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	.mainpagetable tr.row td,
+	.mainpagetable tr.row td:last-child,
+	.mainpagetable tr.row td:first-child,
+	.t-navbar-menu > div,
+	.t-navbar-head,
+	table.wikitable > * > tr > td,
+	.t-c,
+	.t-dsc > td,
+	.t-sdsc-begin td,
+	.t-rev > td:nth-child(1),
+	.t-rev > td:nth-child(2),
+	.mw-cppsearch-groups th,
+	.mw-cppsearch-groups td,
+	table.ambox,
+	.t-dcl > td,
+	.t-dcl-sep > td,
+	.dsctable > tbody > tr:last-child > td,
+	.t-inheritance-diagram,
+	#userloginForm,
+	.t-dcl-rev > .t-dcl:first-child > td,
+	.t-dcl-rev > .t-dcl > td,
+	.t-cc,
+	#pagehistory li,
+	td.diff-context {
+		border-color: rgba(255, 255, 255, 0.1);
+	}
+	.t-rev-inl,
+	.suggestions-special,
+	.t-dcl-h > td,
+	.t-dsc-hitem > td,
+	div#cpp-head-personal ul,
+	.t-dcl-rev > .t-dcl-rev-aux > td,
+	fieldset {
+		border-color: rgba(255, 255, 255, 0.2);
+	}
+	#pagehistory li.selected {
+		border-color: var(--fg-link);
+	}
+	hr {
+		background-color: rgba(255, 255, 255, 0.1);
+	}
 
-div.vectorTabs li.selected a,
-div.vectorTabs li.selected a:link,
-div.vectorTabs li.selected a:visited,
-div#content,
-table.wikitable,
-td.diff-context,
-.suggestions a.mw-searchSuggest-link {
-  color: var(--fg);
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-.t-mark-rev,
-.t-mark-rev.t-mark-ts {
-  color: var(--fg-2);
-}
-div#footer ul li,
-.t-mark {
-  color: var(--fg-muted);
-}
+	div.vectorTabs li.selected a,
+	div.vectorTabs li.selected a:link,
+	div.vectorTabs li.selected a:visited,
+	div#content,
+	table.wikitable,
+	td.diff-context,
+	.suggestions a.mw-searchSuggest-link {
+		color: var(--fg);
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	.t-mark-rev,
+	.t-mark-rev.t-mark-ts {
+		color: var(--fg-2);
+	}
+	div#footer ul li,
+	.t-mark {
+		color: var(--fg-muted);
+	}
 
-a,
-a:link,
-div.vectorTabs ul li a,
-div.vectorTabs li.selected a:hover,
-div#content a.external,
-div#content a.external:link,
-div#content a.extiw,
-div#content a.extiw:link {
-  color: var(--fg-link);
-}
-a:hover,
-a:visited:hover,
-div.vectorTabs ul li a:hover,
-div#content a.external:hover,
-div#content a.extiw:hover {
-  color: var(--fg-link-hover);
-}
-a:visited,
-div.vectorTabs ul li a:visited,
-div#content a.external:visited,
-div#content a.extiw:visited {
-  color: var(--fg-link-visited);
-}
+	a,
+	a:link,
+	div.vectorTabs ul li a,
+	div.vectorTabs li.selected a:hover,
+	div#content a.external,
+	div#content a.external:link,
+	div#content a.extiw,
+	div#content a.extiw:link {
+		color: var(--fg-link);
+	}
+	a:hover,
+	a:visited:hover,
+	div.vectorTabs ul li a:hover,
+	div#content a.external:hover,
+	div#content a.extiw:hover {
+		color: var(--fg-link-hover);
+	}
+	a:visited,
+	div.vectorTabs ul li a:visited,
+	div#content a.external:visited,
+	div#content a.extiw:visited {
+		color: var(--fg-link-visited);
+	}
 
-input,
-textarea,
-div#simpleSearch,
-select,
-.coliru-select-compiler select {
-  background-color: var(--bg-input);
-}
-input,
-textarea,
-div#simpleSearch input#searchInput,
-input,
-select,
-.coliru-select-compiler select {
-  color: var(--fg-input);
-}
-div#simpleSearch,
-input[type="search"],
-input[type="text"],
-input,
-textarea,
-select,
-.coliru-select-compiler select {
-  border-color: rgba(255, 255, 255, 0.2);
-}
-input[type="search"],
-input[type="text"],
-textarea,
-input,
-select,
-.coliru-select-compiler select {
-  border-width: 0.5px;
-  border-style: solid;
-}
+	input,
+	textarea,
+	div#simpleSearch,
+	select,
+	.coliru-select-compiler select {
+		background-color: var(--bg-input);
+	}
+	input,
+	textarea,
+	div#simpleSearch input#searchInput,
+	input,
+	select,
+	.coliru-select-compiler select {
+		color: var(--fg-input);
+	}
+	div#simpleSearch,
+	input[type="search"],
+	input[type="text"],
+	input,
+	textarea,
+	select,
+	.coliru-select-compiler select {
+		border-color: rgba(255, 255, 255, 0.2);
+	}
+	input[type="search"],
+	input[type="text"],
+	textarea,
+	input,
+	select,
+	.coliru-select-compiler select {
+		border-width: 0.5px;
+		border-style: solid;
+	}
 
-.coliru-btn,
-input[type="submit"] {
-  background-color: var(--fg-link);
-  color: var(--bg);
-}
-.coliru-btn:hover,
-input[type="submit"]:hover {
-  background-color: var(--fg-link-hover);
-  color: var(--bg);
-}
-.coliru-btn {
-  border-color: var(--fg-link-hover);
-}
-input[type="submit"] {
-  border: solid 0.5px var(--fg-link-hover);
-}
+	.coliru-btn,
+	input[type="submit"] {
+		background-color: var(--fg-link);
+		color: var(--bg);
+	}
+	.coliru-btn:hover,
+	input[type="submit"]:hover {
+		background-color: var(--fg-link-hover);
+		color: var(--bg);
+	}
+	.coliru-btn {
+		border-color: var(--fg-link-hover);
+	}
+	input[type="submit"] {
+		border: solid 0.5px var(--fg-link-hover);
+	}
 
-td[style*="background: #90ff90"] {
-  background-color: rgba(30, 255, 30, 0.3) !important;
-  color: #fff !important;
-}
-td[style*="background:#ff9090"] {
-  background-color: rgba(255, 30, 30, 0.3) !important;
-  color: #fff !important;
-}
-td[style*="background: #ececec"] {
-  background-color: rgba(80, 80, 80, 0.5) !important;
-  color: #fff !important;
-}
+	td[style*="background: #90ff90"] {
+		background-color: rgba(30, 255, 30, 0.3) !important;
+		color: #fff !important;
+	}
+	td[style*="background:#ff9090"] {
+		background-color: rgba(255, 30, 30, 0.3) !important;
+		color: #fff !important;
+	}
+	td[style*="background: #ececec"] {
+		background-color: rgba(80, 80, 80, 0.5) !important;
+		color: #fff !important;
+	}
 
-div[style*="background-color: #ffeeaa"] {
-  background-color: rgba(150, 100, 0, 0.3) !important;
-  border: none !important;
-}
-.errorbox {
-  background-color: rgba(255, 30, 30, 0.5);
-  color: #fff;
-}
+	div[style*="background-color: #ffeeaa"] {
+		background-color: rgba(150, 100, 0, 0.3) !important;
+		border: none !important;
+	}
+	.errorbox {
+		background-color: rgba(255, 30, 30, 0.5);
+		color: #fff;
+	}
 
-.mw-plusminus-neg,
-.previewnote,
-div.vectorTabs li.new a {
-  color: rgba(255, 30, 30, 0.8);
-}
-.mw-plusminus-pos {
-  color: rgba(30, 255, 30, 0.8);
-}
+	.mw-plusminus-neg,
+	.previewnote,
+	div.vectorTabs li.new a {
+		color: rgba(255, 30, 30, 0.8);
+	}
+	.mw-plusminus-pos {
+		color: rgba(30, 255, 30, 0.8);
+	}
 
-div.mw-geshi,
-.ace-tm,
-pre {
-  background-color: var(--syntax-bg);
-}
-.ace-tm .ace_gutter {
-  background-color: var(--syntax-bg-2);
-}
-.ace-tm .ace_gutter,
-.ace-tm .ace_keyword.ace_operator,
-.c.source-c .br0,
-.c.source-c .sy1,
-.c.source-c .sy2,
-.c.source-c .sy3 {
-  color: var(--fg-muted);
-}
-.cpp.source-cpp .sy1,
-.cpp.source-cpp .sy4,
-.cpp.source-cpp .br0,
-.cpp.source-cpp .de1,
-.source-text pre,
-div.mw-geshi,
-.ace-tm,
-pre,
-.c.source-c .sy4 {
-  color: var(--syntax-fg);
-}
-.cpp.source-cpp .sy2,
-.cpp.source-cpp .sy3 {
-  color: var(--syntax-fg-2);
-}
-.cpp.source-cpp .kw2,
-.cpp.source-cpp .kw4,
-.ace-tm .ace_constant,
-.ace-tm .ace_storage,
-.c.source-c .kw4,
-.c.source-c .es1,
-.c.source-c .kw2 {
-  color: var(--syntax-builtin);
-}
-.cpp.source-cpp .kw1,
-.cpp.source-cpp .es1,
-.cpp.source-cpp .es2,
-.c.source-c .es5,
-.c.source-c .es2,
-.ace-tm .ace_keyword,
-.c.source-c .kw1 {
-  color: var(--syntax-keyword);
-}
-.ace-tm .ace_support.ace_function {
-  color: var(--syntax-function);
-}
-.cpp.source-cpp .st0,
-.cpp.source-cpp .st1,
-.cpp.source-cpp .st2,
-.ace-tm .ace_string,
-.ace-tm .ace_constant.ace_language,
-.c.source-c .st0,
-.c.source-c .st1,
-.c.source-c .st2 {
-  color: var(--syntax-string);
-}
-.cpp.source-cpp .nu0,
-.cpp.source-cpp .nu1,
-.cpp.source-cpp .nu2,
-.ace-tm .ace_constant.ace_numeric,
-.c.source-c .nu0,
-.c.source-c .nu1,
-.c.source-c .nu2,
-.c.source-c .nu16,
-.c.source-c .nu32,
-.c.source-c .nu64 {
-  color: var(--syntax-number);
-}
-.t-spar,
-.cpp.source-cpp .co,
-.cpp.source-cpp .co1,
-.cpp.source-cpp .co2,
-.cpp.source-cpp .coMULTI,
-.c.source-c .co1,
-.c.source-c .co2,
-.c.source-c .co3,
-.ace-tm .ace_comment {
-  color: var(--syntax-comment);
-}
+	div.mw-geshi,
+	.ace-tm,
+	pre {
+		background-color: var(--syntax-bg);
+	}
+	.ace-tm .ace_gutter {
+		background-color: var(--syntax-bg-2);
+	}
+	.ace-tm .ace_gutter,
+	.ace-tm .ace_keyword.ace_operator,
+	.c.source-c .br0,
+	.c.source-c .sy1,
+	.c.source-c .sy2,
+	.c.source-c .sy3 {
+		color: var(--fg-muted);
+	}
+	.cpp.source-cpp .sy1,
+	.cpp.source-cpp .sy4,
+	.cpp.source-cpp .br0,
+	.cpp.source-cpp .de1,
+	.source-text pre,
+	div.mw-geshi,
+	.ace-tm,
+	pre,
+	.c.source-c .sy4 {
+		color: var(--syntax-fg);
+	}
+	.cpp.source-cpp .sy2,
+	.cpp.source-cpp .sy3 {
+		color: var(--syntax-fg-2);
+	}
+	.cpp.source-cpp .kw2,
+	.cpp.source-cpp .kw4,
+	.ace-tm .ace_constant,
+	.ace-tm .ace_storage,
+	.c.source-c .kw4,
+	.c.source-c .es1,
+	.c.source-c .kw2 {
+		color: var(--syntax-builtin);
+	}
+	.cpp.source-cpp .kw1,
+	.cpp.source-cpp .es1,
+	.cpp.source-cpp .es2,
+	.c.source-c .es5,
+	.c.source-c .es2,
+	.ace-tm .ace_keyword,
+	.c.source-c .kw1 {
+		color: var(--syntax-keyword);
+	}
+	.ace-tm .ace_support.ace_function {
+		color: var(--syntax-function);
+	}
+	.cpp.source-cpp .st0,
+	.cpp.source-cpp .st1,
+	.cpp.source-cpp .st2,
+	.ace-tm .ace_string,
+	.ace-tm .ace_constant.ace_language,
+	.c.source-c .st0,
+	.c.source-c .st1,
+	.c.source-c .st2 {
+		color: var(--syntax-string);
+	}
+	.cpp.source-cpp .nu0,
+	.cpp.source-cpp .nu1,
+	.cpp.source-cpp .nu2,
+	.ace-tm .ace_constant.ace_numeric,
+	.c.source-c .nu0,
+	.c.source-c .nu1,
+	.c.source-c .nu2,
+	.c.source-c .nu16,
+	.c.source-c .nu32,
+	.c.source-c .nu64 {
+		color: var(--syntax-number);
+	}
+	.t-spar,
+	.cpp.source-cpp .co,
+	.cpp.source-cpp .co1,
+	.cpp.source-cpp .co2,
+	.cpp.source-cpp .coMULTI,
+	.c.source-c .co1,
+	.c.source-c .co2,
+	.c.source-c .co3,
+	.ace-tm .ace_comment {
+		color: var(--syntax-comment);
+	}
 
-.ace-tm .ace_marker-layer .ace_active-line,
-.ace-tm .ace_gutter-active-line,
-.ace-tm .ace_print-margin {
-  background-color: rgba(255, 255, 255, 0.15);
-}
-.ace_cursor {
-  border-color: var(--fg-link);
-}
-.ace-tm .ace_cursor {
-  color: var(--fg-link);
-}
+	.ace-tm .ace_marker-layer .ace_active-line,
+	.ace-tm .ace_gutter-active-line,
+	.ace-tm .ace_print-margin {
+		background-color: rgba(255, 255, 255, 0.15);
+	}
+	.ace_cursor {
+		border-color: var(--fg-link);
+	}
+	.ace-tm .ace_cursor {
+		color: var(--fg-link);
+	}
 
-.mw-geshi a {
-  color: inherit;
-  text-decoration: underline;
-}
-.mw-geshi a:hover {
-  color: var(--fg-link);
-}
-.mw-geshi a:visited {
-  color: var(--fg-muted);
-}
+	.mw-geshi a {
+		color: inherit;
+		text-decoration: underline;
+	}
+	.mw-geshi a:hover {
+		color: var(--fg-link);
+	}
+	.mw-geshi a:visited {
+		color: var(--fg-muted);
+	}
 
-ul {
-  list-style-image: none;
-}
+	ul {
+		list-style-image: none;
+	}
 
-.t-image {
-  filter: invert(1) hue-rotate(180deg);
+	.t-image {
+		filter: invert(1) hue-rotate(180deg);
+	}
 }
