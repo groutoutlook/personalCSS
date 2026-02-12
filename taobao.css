@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name           www.taobao.com
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document regexp(".*taobao.com.*"),
+regexp(".*tmall.com.*") {
+ .xxl .tbpc-col-xxl-10 {
+    display: block;
+    flex: 0 0 12%;
+    max-width: 11%;
+}
+}
