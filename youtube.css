@@ -7,15 +7,25 @@
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com") {
+	
+	:root{
+		--ytd-rich-grid-item-margin : -1px;
+	}
  ytd-rich-item-renderer[rendered-from-rich-grid] {
     --ytd-rich-item-row-usable-width: calc(100% / 2 - var(--ytd-rich-grid-gutter-margin)*2);
     width: calc(var(--ytd-rich-item-row-usable-width)/var(--ytd-rich-grid-items-per-row) - var(--ytd-rich-grid-item-margin) - .01px);
+	 margin: -1px;
 }
 #content.ytd-rich-section-renderer {
     max-width: var(--ytd-rich-grid-content-max-width);
-    margin: 0 calc(var(--ytd-rich-grid-item-margin)/2 + var(--ytd-rich-grid-gutter-margin));
-    
+    /*margin: 0 calc(var(--ytd-rich-grid-item-margin)/2 + var(--ytd-rich-grid-gutter-margin));*/
+	margin: -20px;
 	/* INFO: I keep those style above for easier finding*/
     display: none;
+}
+	
+.lockup.ytd-item-section-renderer, learning-journey-quiz-view-model.ytd-item-section-renderer:first-child, yt-official-card-view-model.ytd-item-section-renderer, yt-search-no-results-renderer.ytd-item-section-renderer, yt-section-header-view-model.ytd-item-section-renderer, ytd-button-renderer.ytd-item-section-renderer, ytd-channel-renderer.ytd-item-section-renderer, ytd-clarification-renderer.ytd-item-section-renderer, ytd-compact-movie-renderer.ytd-item-section-renderer, ytd-compact-playlist-renderer.ytd-item-section-renderer, ytd-compact-promoted-item-renderer.ytd-item-section-renderer, ytd-compact-radio-renderer.ytd-item-section-renderer, ytd-compact-video-renderer.ytd-item-section-renderer, ytd-continuation-item-renderer.ytd-item-section-renderer:not(:has(yt-ghost-comments)), ytd-emergency-onebox-renderer.ytd-item-section-renderer, ytd-expandable-video-description-body-renderer.ytd-item-section-renderer:not(ytd-video-description-header-renderer+ytd-expandable-video-description-body-renderer.ytd-item-section-renderer,ytd-video-description-infocards-section-renderer.ytd-item-section-renderer+ytd-expandable-video-description-body-renderer).ytd-item-section-renderer, ytd-feed-nudge-renderer.ytd-item-section-renderer, ytd-info-panel-container-renderer.ytd-item-section-renderer, ytd-message-renderer.ytd-item-section-renderer:not(:first-child), ytd-mini-game-card-view-model.ytd-item-section-renderer, ytd-movie-renderer.ytd-item-section-renderer, ytd-playlist-renderer.ytd-item-section-renderer, ytd-promoted-sparkles-text-search-renderer.ytd-item-section-renderer, ytd-radio-renderer.ytd-item-section-renderer, ytd-show-renderer.ytd-item-section-renderer, ytd-video-renderer.ytd-item-section-renderer, ytd-web-answer-renderer.ytd-item-section-renderer {
+    margin: -10px;
+	max-width: 70%;
 }
 }

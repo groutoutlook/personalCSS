@@ -59,6 +59,7 @@ domain("ubuntu-mate.community"),
 domain("users.rust-lang.org"),
 domain("talk.makeict.org"),
 domain("caddy.community"),
+url-prefix("https://community.memfault.com/"),
 url-prefix("https://www.freecodecamp.org/forum/"),
 url-prefix("https://www.sitepoint.com/community/"), url-prefix("https://forum.kicad.info") {
   :root {

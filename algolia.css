@@ -1,0 +1,23 @@
+/* ==UserStyle==
+@name           hn.algolia.com
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("hn.algolia.com") {
+    /* Insert code here... */
+	.default .SearchHeader.container, .default .SearchFilters.container,
+	.SearchResults {
+    	background: #06060f;
+	}
+	span {	
+		color: #baffdc;
+	}	
+	.SearchHeader .SearchInput {
+    font-weight: 500;
+    background-color: #0a260d;
+    color: rgb(105 252 52 / 75%);
+}
+}
