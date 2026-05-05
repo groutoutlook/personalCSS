@@ -1,0 +1,151 @@
+/* ==UserStyle==
+@name           stackexchange.com
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("stackexchange.com") {
+    /* Insert code here... */
+	* {
+		--black-400 : #50c060;
+		--black-500 : #50d070;
+	}
+	.s-anchors.s-anchors__muted {
+		--_an-a-fc: var(--black-300) !important;
+		--_an-a-fc-hover: var(--green-300) !important;
+		--_an-a-fc-visited: var(--green-500) !important;
+	}
+	.s-post-summary {
+		--_ps-bb: var(--su1) solid var(--bc-light);
+		--_ps-bg: unset;
+		--_ps-o: #fff0f0;
+		--_ps-content-excerpt-fc: var(--_ps-state-fc, var(--fc-medium));
+		--_ps-content-title-a-fc: var(--_ps-state-fc, var(--theme-post-title-color, var(--theme-link-color, var(--theme-secondary-400))));
+		--_ps-content-title-a-fc-hover: var(--_ps-state-fc, var(--theme-post-title-color-hover, var(--theme-link-color-hover, var(--theme-secondary-500))));
+		--_ps-content-title-a-fc-visited: var(--_ps-state-fc, var(--theme-post-title-color-visited, var(--theme-link-color-visited, var(--purple-500))));
+		--_ps-content-title-a-fc-hover-visited: var(--_ps-state-fc, var(--theme-post-title-color-hover, var(--theme-link-color-hover, var(--purple-600))));
+		--_ps-stats-ai: flex-end;
+		--_ps-stats-fc: hsl(99.5deg 100% 81.46%);
+		--_ps-stats-fd: column;
+		--_ps-stats-w: calc(var(--su96) + var(--su12));
+		--_ps-has-answers-bc: var(--green-400);
+		--_ps-has-answers-bg: unset;
+		--_ps-has-answers-fc: var(--green-400);
+		--_ps-has-accepted-answers-bc: var(--green-400);
+		--_ps-has-accepted-answers-bg: var(--green-400);
+		--_ps-has-accepted-answers-fc: var(--white);
+		--_ps-stats-item-emphasized-fc: var(--_ps-state-fc, #60c060);
+		background-color: var(--_ps-bg);
+		border-bottom: var(--_ps-bb);
+		display: flex;
+		padding: var(--su16);
+		position: relative;
+	}
+
+	body.unified-theme, body.unified-theme	* {
+	/*--black-500 : #50f050;*/
+    --theme-base-primary-color-h: 5.61403509;
+    --theme-base-primary-color-s: 78.08219178%;
+    --theme-base-primary-color-l: 57.05882353%;
+    --theme-primary-custom-100: hsl(var(--theme-base-primary-color-h), var(--theme-base-primary-color-s), calc(var(--theme-base-primary-color-l) + ((100% - var(--theme-base-primary-color-l)) * .9)));
+    --theme-primary-custom-200: hsl(var(--theme-base-primary-color-h), var(--theme-base-primary-color-s), calc(var(--theme-base-primary-color-l) + ((100% - var(--theme-base-primary-color-l)) * .75)));
+    --theme-primary-custom-300: hsl(var(--theme-base-primary-color-h), var(--theme-base-primary-color-s), calc(var(--theme-base-primary-color-l) + ((100% - var(--theme-base-primary-color-l)) * .5)));
+    --theme-primary-custom-400: hsl(var(--theme-base-primary-color-h), var(--theme-base-primary-color-s), var(--theme-base-primary-color-l));
+    --theme-primary-custom-500: hsl(var(--theme-base-primary-color-h), var(--theme-base-primary-color-s), calc(var(--theme-base-primary-color-l) + (var(--theme-base-primary-color-l) * -.3)));
+    --theme-primary-custom-600: hsl(var(--theme-base-primary-color-h), var(--theme-base-primary-color-s), calc(var(--theme-base-primary-color-l) + (var(--theme-base-primary-color-l) * -.6)));
+    --theme-primary-custom: var(--theme-primary-custom-400);
+    --theme-button-color: var(--theme-primary);
+    --theme-button-hover-color: var(--theme-primary-400);
+    --theme-button-hover-background-color: var(--theme-primary-100);
+    --theme-button-active-background-color: var(--theme-primary-200);
+    --theme-button-selected-color: var(--theme-primary-600);
+    --theme-button-selected-background-color: var(--theme-primary-300);
+    --theme-button-outlined-border-color: var(--theme-primary-400);
+    --theme-button-outlined-selected-border-color: var(--theme-primary-500);
+    --theme-button-primary-color: var(--green-200);
+    --theme-button-primary-active-color: var(--white);
+    --theme-button-primary-hover-color: var(--white);
+    --theme-button-primary-selected-color: var(--white);
+    --theme-button-primary-background-color: var(--theme-primary-400);
+    --theme-button-primary-active-background-color: var(--theme-primary-600);
+    --theme-button-primary-hover-background-color: var(--theme-primary-500);
+    --theme-button-primary-selected-background-color: var(--theme-primary-600);
+    --theme-background-color: #003c00;
+    --theme-background-position: 50px 0;
+    --theme-background-repeat: repeat;
+    --theme-background-size: 71px 71px;
+    --theme-background-attachment: auto;
+    --theme-content-background-color: #026002;
+    --theme-content-border-color: hsl(210,8%,90%);
+    --theme-header-background-color: transparent;
+    --theme-header-background-position: center left;
+    --theme-header-background-repeat: repeat;
+    --theme-header-background-size: auto;
+    --theme-header-background-border-bottom: 0;
+    --theme-header-link-color: var(--theme-primary);
+    --theme-header-sponsored-color: hsla(0,0%,100%,0.4);
+    --theme-header-foreground-color: transparent;
+    --theme-header-foreground-position: bottom right;
+    --theme-header-foreground-repeat: no-repeat;
+    --theme-header-foreground-size: auto;
+    --theme-footer-background-color: transparent;
+    --theme-footer-background-position: top left;
+    --theme-footer-background-repeat: no-repeat;
+    --theme-footer-background-size: auto;
+    --theme-footer-background-border-top: 0;
+    --theme-footer-title-color: var(--theme-primary);
+    --theme-footer-text-color: var(--black-400);
+    --theme-footer-link-color: var(--black-500);
+    --theme-footer-link-color-hover: var(--black-600);
+    --theme-footer-divider-color: var(--black-225);
+    --theme-footer-padding-top: 0;
+    --theme-footer-padding-bottom: 0;
+    --theme-link-color: hsl(120,70%,46%);
+    --theme-link-color-hover: hsl(140,77%,46%);
+    --theme-link-color-visited: hsl(130,77%,36%);
+    --theme-tag-background-color: hsl(0,0%,100%);
+    --theme-tag-border-color: #aaa;
+    --theme-tag-color: #696969;
+    --theme-tag-hover-background-color: hsl(0,0%,95%);
+    --theme-tag-hover-border-color: #9d9d9d;
+    --theme-tag-hover-color: #5c5c5c;
+    --theme-tag-required-border-color: #696969;
+    --theme-tag-required-hover-border-color: #5c5c5c;
+    --theme-body-font-family: var(--ff-sans);
+    --theme-body-font-color: var(--black-200);
+    --theme-post-title-font-family: var(--ff-sans);
+    --theme-post-title-color: var(--theme-link-color);
+    --theme-post-title-color-hover: var(--theme-link-color-hover);
+    --theme-post-title-color-visited: var(--theme-link-color-visited);
+    --theme-post-body-font-family: var(--ff-sans);
+    --theme-post-owner-background-color: hsla(210,77%,21%,0.08);
+    --theme-post-owner-new-background-color: hsla(210,77%,16%,0.08);
+    --theme-topbar-bottom-border: none;
+}
+	body {
+		background-image: none;
+	}
+	#content {
+	    color: #bff5b3;
+	}
+	body > header.site-header > div > a > img{
+		background-color: var(--theme-button-primary-color);
+	}
+	.comment-date, .comment-date>a, .comment-date>a:hover .comment-date>a:visited {
+		border-bottom: none;
+		color: var(--black-200) !important;
+	}
+	#question-header .question-hyperlink {
+		color: var(--green-300);
+	}	
+	.mdhelp-tabs{
+		background-color: #00c000;
+	}
+	.wmd-input{
+		background-color: #008000;
+		color: #50f050;
+	}
+	
+}
