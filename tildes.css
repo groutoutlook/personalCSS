@@ -1,0 +1,24 @@
+/* ==UserStyle==
+@name           tildes.net
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("tildes.net") {
+    /* Insert code here... */
+	
+	:root{
+		--m-width: 900px;
+	}
+	main{
+		max-width: var(--m-width) !important;
+		margin-left: auto;
+		margin-right: auto;
+		min-width: 700px !important;
+		list-style: none;
+		margin: 0 0 0 300px;
+		align-items:center;
+	}
+}

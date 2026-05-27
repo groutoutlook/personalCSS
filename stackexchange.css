@@ -9,6 +9,7 @@
 @-moz-document domain("stackexchange.com") {
     /* Insert code here... */
 	* {
+		--white: #702020;
 		--black-400 : #50c060;
 		--black-500 : #50d070;
 	}
@@ -147,5 +148,11 @@
 		background-color: #008000;
 		color: #50f050;
 	}
-	
+	.s-card	{
+		background-color: #802020; 
+	}
+	#answer-sort-dropdown-select-menu {
+		color: white;	
+	}
+
 }
