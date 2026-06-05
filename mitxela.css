@@ -1,0 +1,22 @@
+/* ==UserStyle==
+@name           mitxela.com
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("mitxela.com") {
+    /* Insert code here... */
+	body {
+		font-family: Helvetica, sans-serif;
+		margin: 1px 0px 0px 20%;
+		align-content: center;
+		width: 900px;
+		color: white;
+		background: #205020;
+	}
+	code {
+    	background: #777;
+	}	
+}
