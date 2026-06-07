@@ -14,6 +14,7 @@
 		--black-400 : #50c060;
 		--black-500 : #50d070;
 	}
+	
 	.s-anchors.s-anchors__muted {
 		--_an-a-fc: var(--black-300) !important;
 		--_an-a-fc-hover: var(--green-300) !important;
@@ -128,9 +129,11 @@
 }
 	body {
 		background-image: none;
+		background: #506d53;
 	}
 	#content {
-	    color: #bff5b3;
+	    color: #bff5b3;		
+		background: #003d03;
 	}
 	body > header.site-header > div > a > img{
 		background-color: var(--theme-button-primary-color);
