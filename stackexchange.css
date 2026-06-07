@@ -6,7 +6,8 @@
 @author         Me
 ==/UserStyle== */
 
-@-moz-document domain("stackexchange.com") {
+
+@-moz-document domain("stackexchange.com"), domain("superuser.com"), domain("askubuntu.com"), domain("mathoverflow.net") {
     /* Insert code here... */
 	* {
 		--white: #702020;

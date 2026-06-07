@@ -5,7 +5,7 @@
 @description    A new userstyle
 @author         Me
 ==/UserStyle== */
-@-moz-document domain("cppreference.com/") {
+@-moz-document domain("cppreference.com") {
 	/* Insert code here... */
 	.stdrev-select select {
 		background-color: #000;
@@ -142,7 +142,7 @@
 	.coliru-btn:hover,
 	.coliru-select-compiler select,
 	.ace-tm .ace_indent-guide {
-		background-image: none;
+		background-image: var(--syntax-bg);
 	}
 
 	.t-navbar-sep,
@@ -377,6 +377,14 @@
 	pre {
 		background-color: var(--syntax-bg);
 	}
+
+	pre, div.mw-geshi, div.mw-highlight {
+		background-color: var(--syntax-bg);
+	}
+	.mw-highlight {
+		background: #080808;
+	}
+	
 	.ace-tm .ace_gutter {
 		background-color: var(--syntax-bg-2);
 	}
