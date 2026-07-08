@@ -384,6 +384,25 @@
 	.mw-highlight {
 		background: #080808;
 	}
+	.mw-highlight .nf {
+    	color: #2080ff;
+	}
+	.mw-highlight .mi {
+		color: #999;
+	}
+	.mw-highlight .nc {
+		color: #2080ff;
+		font-weight: bold;
+	}
+	
+	.mw-highlight .cp {
+		color: #BCA550;
+	}
+	
+	.mw-highlight .cpf {
+		color: #6D9B9B;
+		font-style: italic;
+	}
 	
 	.ace-tm .ace_gutter {
 		background-color: var(--syntax-bg-2);
